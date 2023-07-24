@@ -22,11 +22,6 @@ a {
   gap: 32px;
 }
 
-.header__links-list::marker {
-  position: relative;
-  top: 5px
-}
-
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
@@ -47,7 +42,6 @@ a {
 
 .header__logo {
   display: grid;
-  z-index: 1;
   justify-self: center;
   align-self: center;
   width: 130px;
@@ -99,7 +93,7 @@ a {
   padding: 164px 50px 127px 50px;
   font-family: Raleway;
   font-size: 100px;
-  color: #FFF;
+  color: #fff;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
@@ -142,7 +136,7 @@ a {
 }
 
 .cover__description-text {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Raleway;
   font-size: 22px;
@@ -155,9 +149,9 @@ a {
 
 .bet-button {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   padding: 12px 32px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Raleway;
   font-size: 22px;
@@ -224,7 +218,7 @@ a {
 .card__title {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -236,7 +230,7 @@ a {
 .card__text {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -258,7 +252,7 @@ a {
 
 .about {
   display: grid;
-  padding: 180px 50px 180px 50px;
+  padding: 180px 50px 0 50px;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
   max-width: 1440px;
@@ -273,7 +267,6 @@ a {
   width: 240px;
   height: 240px;
   justify-self: center;
-  /* align-self: center; */
 }
 
 .about__logo-image {
@@ -303,4 +296,65 @@ a {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1440px;
+  padding: 180px 50px 90px 50px;
+}
+
+.footer__address {
+  display: grid;
+  justify-self: start;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.footer__menu {
+  display: grid;
+  justify-items: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer__menu-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__menu-link-active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  gap: 48px;
+}
+
+.footer__social-link {
+  display: block;
+  max-width: 48px;
+}
+
+.footer__social-icon {
+  width: 100%;
 }
