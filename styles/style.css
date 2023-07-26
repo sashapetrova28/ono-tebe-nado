@@ -9,10 +9,10 @@ a {
   padding: 92px 49px 92px 51px;
   color: #000;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__links-list {
@@ -26,17 +26,13 @@ a {
   list-style-type: none;
 }
 
-.header__link,
-.address__tel,
-.address__mail,
-.address__address {
+.header__link {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
-.header__link-active,
-.address__item_no-decoration {
+.header__link-active {
   text-decoration: none;
 }
 
@@ -54,12 +50,29 @@ a {
 .address {
   padding-top: 3px;
   justify-self: end;
-  font-style: normal;
   line-height: 1.35;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.address__tel {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.address__mail {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .address__address {
   width: 240px;
+}
+
+.address__item_no-decoration {
+  text-decoration: none;
 }
 
 .cover {
@@ -72,6 +85,8 @@ a {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay {
@@ -91,10 +106,8 @@ a {
   z-index: 1;
   gap: 9px;
   padding: 164px 50px 127px 50px;
-  font-family: Raleway;
   font-size: 100px;
   color: #fff;
-  font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -138,9 +151,7 @@ a {
 .cover__description-text {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
@@ -153,25 +164,22 @@ a {
   padding: 12px 32px;
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: uppercase;
 }
 
 .lots {
   padding: 180px 50px 0 50px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
   padding-bottom: 27px;
   padding-left: 40px;
@@ -179,9 +187,16 @@ a {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style-type: none;
-  max-width: 1440px;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  flex-basis: 0%;
+  min-height: 450px;
+  min-width: 430px;
 }
 
 .card {
@@ -190,29 +205,23 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 40px;
-  height: 450px;
-  max-width: 430px;
+  min-height: 450px;
+  min-width: 430px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -220,7 +229,6 @@ a {
   z-index: 1;
   color: #fff;
   font-size: 22px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
@@ -232,7 +240,6 @@ a {
   z-index: 1;
   color: #fff;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 120%;
 }
@@ -241,9 +248,7 @@ a {
   display: block;
   color: #000;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -256,6 +261,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about__logo {
@@ -285,16 +292,13 @@ a {
   justify-content: space-between;
   font-weight: 400;
   font-size: 20px;
-  line-height: normal;
   padding-top: 100px;
 }
 
 .about__title {
   color: #000;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -303,6 +307,8 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1440px;
   padding: 180px 50px 90px 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__address {
@@ -310,7 +316,6 @@ a {
   justify-self: start;
   color: #000;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.35;
 }
@@ -333,9 +338,7 @@ a {
   text-underline-offset: 4px;
   color: #000;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .footer__menu-link-active {
